@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    border: 1px solid black;
+    border: none;
+}
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-dark-color:#1d69a3;
+    --padding-inline-section:20px;
+}
+body{
+    font-family: "Poppins";
+}
+a{
+    color: var(--primary-text-color);
+    text-decoration: none;
+    display: inline-block;
+}
+.container{
+    overflow: hidden;
+    max-width: 1180px;
+    margin-inline:auto ;
+    padding: var(--padding-inline-section);
+}
+.flex{
+    display: flex;
+}
+.nav-bar{
+    /* margin-top: 20px; */
+    justify-content: space-between;
+}
+.company-logo{
+    width: 4rem;
+}
+.top-banner{
+    font-size: 1.3rem;
+    color: white;
+    background-image: url(https://www.zarla.com/images/walmart-logo-2400x2400-20223105.png?crop=1:1,smart&width=150&dpr=2);
+    text-align: center;
+    /* padding: .5rem; */
+    /* overflow: hidden; */
+}
+.nav-links ul  {
+    list-style: none;
+    gap: 60px;
+    /* flex-wrap: wrap; */
+}
+li {
+    margin-top: 20px;
+}
+.menu{
+    margin-top: 20px;
+    display: none;
+}
+.Sign{
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 8px;
+    margin-top: -10px;
+    padding: 10px;
+}
+.Sign:hover{
+    background-color: var(--accent-dark-color);
+    color: white;
+}
+li>a:hover{
+    color: violet;
+    border-radius: 8px;
+    background-color: #C0C0C0;
+}
+.main-container{
+    gap: 40px;
+    justify-content: space-around;
+}
+.left-container{
+    align-self: center;
+    max-width: 40vw;
+}
+.left-container>h2,p,.get-started{
+    margin-top: 15px;
+}
+.right-header img{
+    width: 40vw
+}
+.marketing-section{
+    flex-direction: column;
+    text-align: center;
+}
+.images{
+    margin-top: 25px;
+    justify-content: space-between;
+}
+.images>img{
+    
+    width: 8rem;
+}
+.feature-section{
+    flex-direction: column;
+}
+.feature-text{
+    text-align: center;
+}
+.feature-section>a{
+    margin: 10px auto;
+    background-color: white;
+    color: var(--primary-text-color);
+}
+.feature-cards{
+    position: relative;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+}
+.card{
+    text-align: center;
+    width: 20rem;
+}
+.feature-img{
+    width: 4rem;
+    margin-top: .5rem;
+}
+.acard{
+    margin: 10px auto;
+    background-color: white;
+    color: var(--primary-text-color);
+}
+.background-border{
+    position: absolute;
+    height: 300px;
+    width:  300px;
+    left: 400px;
+    top: 60px;
+    z-index: -1;
+    border: none;
+    border-radius:25% 75% 37% 63% / 50% 46% 54% 50%  ;
+    background-color: #C0C0C0;
+}
+.section-content{
+    gap: 20px;
+}
+.left-section-image>img{
+    height: 500px;
+}
+.right-section-text{
+    gap: 50px;
+    align-self: center;
+}
+.example-section{
+    flex-direction: column;
+}
+.example-top{
+    margin: 0 auto;
+}
+.example-top{
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+}
+.example-bottom{
+    gap: 20px;
+}
+.example-images{
+    height: 300px;
+    position: relative;
+    width: 300px;
+    background-image: url(https://img.freepik.com/free-vector/graphic-design-isometric-colorful-concept-with-two-illustrator-designer-working-office-3d-vector-illustration_1284-30020.jpg?size=626&ext=jpg&ga=GA1.1.658064975.1722161137&semt=ais_hybrid);
+    background-position: center;
+    background-size: contain;
+}
+.example-images>a>h2{
+    position: absolute;
+    bottom: 10px;
+    right: 25px;
+    left: 25px;
+    z-index:1;
+}
+.cta-section{
+    flex-direction: column;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: var(--accent-color);
+    color: white;
+}
+.cta-section>h2{
+    position: absolute;
+    top:30px;
+}
+.cta-section>p{
+    margin-top: 70px;
+}
+footer {
+    background-color: lightblue;
+    color: aliceblue;
+}
+.foot-list>h4{
+    color: var(--accent-color);
+}
+.hover-link{
+    color: aliceblue;
+}
+.footerimg{
+    height: 150px;
+    margin: 0px
+}
+li{
+    list-style: none;
+}
+.foot-list{
+    flex-direction: column;
+    gap: 25px;
+}
+.media-footer{
+    justify-content: center;
+    gap: 30px;
+    background-color: cadetblue;
+}
+.icons{
+    gap: 10px;
+}
